@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    height: 70px;
+    background-color: #bab9be;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.arg-prog img{
+    width: 60px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.arg-prog{
+    display: flex;
+    align-items: center;
+}
+
+.arg-prog-title{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.social-bar a{
+    padding-right: 7px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    font-size: 17px;
+}
+
+.fb-icon:hover{
+    color: #1878F1;
+}
+
+.tw-icon:hover{
+    color: #2AA4EF;
+}
+
+.in-icon:hover{
+    color: #c300ff;
+}
+
+.gh-icon:hover{
+    color: #0071b3;
+}
+
+.login-button button{
+    background-color: rgb(52, 180, 52);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 9px;
+}
