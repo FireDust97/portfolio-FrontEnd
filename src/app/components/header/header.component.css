@@ -1,0 +1,100 @@
+.nav-bar{
+    height: 70px;
+    background-color: #bab9be;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    z-index: 2;
+}
+
+.arg-prog img{
+    width: 60px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.arg-prog{
+    display: flex;
+    align-items: center;
+}
+
+.arg-prog-title{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 16px;
+}
+
+.arg-prog-title p{
+    font-family: 'Nunito';
+    font-weight: 700;
+    line-height: 0.3;
+    cursor: default;
+}
+
+.social-bar a{
+    padding-right: 7px;
+    transition-property: color;
+    transition-duration: 0.3s;
+    font-size: 17px;
+}
+
+.lin-icon:hover{
+    color: #0A66C2;
+}
+
+.gh-icon:hover{
+    color: #2b4d58;
+}
+
+/* .login-button button{
+    background-color: rgb(52, 180, 52);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 9px;
+} */
+
+.btn-success{
+    background-color: #2aca32 !important;
+    margin-left: 9px;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)), url('src\assets\img\hero-fondo.png');
+    padding-top: 280px;
+    padding-bottom: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.hero-container{
+    background-color: rgba(21, 28, 66, 0.938);
+}
+
+.hero-container h1, h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+
+.hero-container i{
+    font-size: 50px;
+    color: rgb(255, 186, 83);
+    display: flex;
+    justify-content: center;
+}
