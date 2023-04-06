@@ -75,7 +75,7 @@
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)), url('src\assets\img\hero-fondo.png');
     padding-top: 280px;
-    padding-bottom: 300px;
+    padding-bottom: 335px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;   
