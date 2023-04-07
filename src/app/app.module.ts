@@ -22,7 +22,29 @@ import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({
+      "outerStrokeGradient": true,
+      "outerStrokeWidth": 19,
+      "outerStrokeLinecap": "inherit",
+      "subtitleColor": '#000000',
+      "subtitleFontSize": "16",
+      "subtitleFontWeight": "600",
+      "innerStrokeWidth": 19,
+      "titleFontSize": "22",
+      "titleFontWeight": "500",
+      "animateTitle": false,
+      "showSubtitle": false,
+      "showTitle": false,
+      "showUnits": false,
+      "showImage": true,
+      "showBackground": false,
+      "clockwise": false,
+      "title": [
+        "Trabajo en",
+        "equipo"
+      ],
+      "responsive": false,
+      "startFromZero": false})
   ],
   providers: [],
   bootstrap: [AppComponent]

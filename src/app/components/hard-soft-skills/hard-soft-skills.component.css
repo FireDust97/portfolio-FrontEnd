@@ -1,0 +1,20 @@
+#mainContainer{
+    padding: 34px 20px 20px 20px;
+    margin: 0;
+}
+
+div{
+    background-color: #E4E4E6;
+}
+
+.row{
+    padding: 0 80px;
+    margin-top: 16px;
+}
+
+.row h1{
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 8px;
+}
