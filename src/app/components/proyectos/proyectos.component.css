@@ -1,0 +1,25 @@
+.row{
+    margin: 0;
+    padding: 20px;
+    background-color: #E4E4E6;
+}
+
+.projectContainer{
+    width: auto;
+}
+
+.projectInfo, .projectImg{
+    display: inline-block;
+    text-align: justify;
+}
+
+.projectImgCtrl{
+    box-shadow: 10px 10px 1px #ab61b0;
+}
+
+/* .row h1{
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 8px;
+} */
