@@ -37,3 +37,22 @@
 #scnd-button{
     margin-left: 8px;
 }
+
+/* media queries */
+
+@media (max-width: 767px){
+    .projectContainer{
+        flex-direction: column;
+        align-items: baseline;
+    }   
+
+    .projectLink{
+        padding-bottom: 23px;
+    }
+}
+
+@media (max-width: 373px){
+    .projectLink{
+        display: flex;
+    }
+}

@@ -65,16 +65,6 @@ header{
     color: #0a9280;
 }
 
-/* .login-button button{
-    background-color: rgb(52, 180, 52);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 12px;
-    cursor: pointer;
-    margin-left: 9px;
-} */
-
 .btn-success{
     background-color: #2aca32 !important;
     margin-left: 9px;
@@ -112,4 +102,33 @@ header{
     color: rgb(255, 186, 83);
     display: flex;
     justify-content: center;
+}
+
+/* media queries */
+
+@media (max-width: 320px){
+    .arg-prog img{
+        width: 48px;
+        height: 38px;
+    }
+
+    .arg-prog-title p{
+        line-height: 0.01;
+        font-size: 15px;
+    }
+
+    .social-bar a{
+        padding-right: 9px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px){
+    header{
+        padding-left: 20px;
+    }
+
+    .header-right{
+        padding-right: 20px;
+    }
 }

@@ -19,3 +19,15 @@ p{
 a{
     text-decoration: solid;
 }
+
+@media (max-width: 325px){
+    p{
+        font-size: 9px;
+    }
+}
+
+@media (min-width:326px) and (max-width: 462px){
+    p{
+        font-size: 11px;
+    }
+}
