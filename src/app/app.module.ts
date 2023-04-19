@@ -11,6 +11,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { FooterComponent } from './components/footer/footer.component';
         "equipo"
       ],
       "responsive": false,
-      "startFromZero": false})
+      "startFromZero": false}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
