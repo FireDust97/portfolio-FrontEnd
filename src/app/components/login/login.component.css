@@ -1,5 +1,5 @@
 html{
-	background-image: url(https://i.pinimg.com/originals/88/ef/df/88efdfbc07ebe43f572f56a9342d6ee3.png);
+	background-image: url(../../../assets/img/loginbg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -11,9 +11,19 @@ body{
 	background-color: transparent;
 }
 
-::selection{
-  background: rgba(26,188,156,0.3);
+.icon{
+	color: #242626!important;
 }
+
+h3, span{
+	font-family: 'Nunito';
+	font-weight: 700;
+}
+
+span{
+	font-size: 1.6rem;
+}
+
 .container{
   max-width: 440px;
   padding: 0 20px;
@@ -29,7 +39,7 @@ body{
 }
 .wrapper .title{
   height: 90px;
-  background: #16a085;
+  background: #242626;
   border-radius: 5px 5px 0 0;
   color: #fff;
   font-size: 30px;
@@ -71,8 +81,8 @@ form .row input::placeholder{
   height: 100%;
   color: #fff;
   font-size: 18px;
-  background: #16a085;
-  border: 1px solid #16a085;
+  background: #efc44b;
+  border: 1px solid #606419;
   border-radius: 5px 0 0 5px;
   display: flex;
   align-items: center;
@@ -94,12 +104,13 @@ form .row input::placeholder{
   font-size: 20px;
   font-weight: 500;
   padding-left: 0px;
-  background: #16a085;
+  background: #208f26;
   border: 1px solid #16a085;
   cursor: pointer;
 }
 form .button input:hover{
-  background: #12876f;
+  background: #18c220!important;
+  border: 1px solid white!important;
 }
 .wrapper form .signup-link{
   text-align: center;
