@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row" *ngIf="persona">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 imgContainer">
         <img src="{{persona.img}}" class="img-fluid" alt="profilePhoto" id="pfp">
     </div>
 </div>
 
-<div class="row">
+<div class="row" *ngIf="persona">
     
     <div id="photoSub" class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <p>{{persona.nombre}} {{persona.apellido}}</p>
