@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 imgContainer">
-        <img src="../../../assets/img/profile-pic.png" class="img-fluid" alt="profilePhoto" id="pfp">
+        <img src="{{persona.img}}" class="img-fluid" alt="profilePhoto" id="pfp">
     </div>
 </div>
 
@@ -12,7 +12,11 @@
     </div>
     <div id="aboutme" class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
         <h1>Acerca de mí</h1>
-        <p>Soy un diseñador y desarrollador de páginas web. Disfruto haciendo páginas simples, limpias y dinámicas que cumplan con las necesidades tanto para quien me contrata como para el usuario final. Destaco por ser puntual y por hacer buenos trabajos. Me destaco en JavaScript, GitHub, HTML5, CSS, y base de datos, así también como diseño web (wireframe). </p>
+        <p>{{persona.descripcion}}</p>
+        <!-- Soy un diseñador y desarrollador de páginas web. Disfruto haciendo páginas simples, limpias y dinámicas que cumplan con las necesidades tanto para quien me contrata como para el usuario final. Destaco por ser puntual y por hacer buenos trabajos. Me destaco en JavaScript, GitHub, HTML5, CSS, y base de datos, así también como diseño web (wireframe). -->
+    </div>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-warning" routerLink="/editacercade/1" *ngIf="isLogged">Editar información</button>
     </div>
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
