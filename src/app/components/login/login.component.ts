@@ -7,7 +7,8 @@ import { TokenService } from 'src/app/service/token.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  host: {'ngNoForm': 'false'}
 })
 export class LoginComponent implements OnInit{
   isLogged = false;
@@ -42,7 +43,7 @@ export class LoginComponent implements OnInit{
       this.isLogged = false;
       this.isLogginFail = true;
       this.errMsj = err.error.mensaje;
-      console.log(this.errMsj);
+      alert("El nombre de usuario o contraseña no son correctos. Verifique los campos ingresados e inténtelo de nuevo.");
     })
   }
 
