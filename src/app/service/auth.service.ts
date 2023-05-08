@@ -10,15 +10,16 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = environment.URL + 'auth/';
+  URL: 'http://localhost:8080/auth/';
+  //URL: 'https://backend-portfolioargprog.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
-    return this.httpClient.post<any>(this.URL + 'nuevo', nuevoUsuario);
+    return this.httpClient.post<any>('http://localhost:8080/auth/nuevo', nuevoUsuario);
   }
 
   public login(loginUsuario: LoginUsuario): Observable<JwtDto>{
-    return this.httpClient.post<JwtDto>(this.URL + 'login', loginUsuario);
+    return this.httpClient.post<JwtDto>('http://localhost:8080/auth/login', loginUsuario);
   }
 }

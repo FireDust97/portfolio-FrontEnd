@@ -10,7 +10,4 @@ export const environment = {
     measurementId: 'G-9YV094CM4X',
   },
     production: false,
-
-    URL: 'http://localhost:8080/',
-    //URL: 'https://backend-portfolioargprog.onrender.com/'
 };
