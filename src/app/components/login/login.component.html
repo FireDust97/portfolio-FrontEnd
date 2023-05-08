@@ -34,7 +34,7 @@
 					  required />
 				  </div>
   
-				  <button id="login-btn" class="btn btn-success btn-lg px-5" type="submit">Login</button>
+				  <button id="login-btn" (click)="simulateLogin()" [class.loading]="isLoading" class="btn btn-success btn-lg px-5" type="submit"><span>Login</span></button>
   
 				</form>
   

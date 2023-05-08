@@ -19,6 +19,14 @@ export class LoginComponent implements OnInit{
   roles: string[] = [];
   errMsj!: string;
 
+  isLoading: boolean = false;
+
+  simulateLogin(): void {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);}
+
   constructor(private tokenService: TokenService, private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
