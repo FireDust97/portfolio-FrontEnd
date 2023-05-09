@@ -23,6 +23,7 @@ export class ImageService {
     .then(async response => {for(let item of response.items){
       this.url = await getDownloadURL(item);
       console.log("Firebase image URL generated succesfully:" + this.url);
+      alert("¡Imagen procesada con éxito!")
     }})
     .catch(error => console.log(error))
   }
