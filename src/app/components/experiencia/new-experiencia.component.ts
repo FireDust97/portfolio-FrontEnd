@@ -10,7 +10,8 @@ import { ExperienciaServiceService } from 'src/app/service/experiencia-service.s
 })
 export class NewExperienciaComponent implements OnInit{
   nombreE: string = '';
-  aniosE: string = '';
+  aniosE1: string = '';
+  aniosE2: string = '';
   descripcionE: string = '';
 
   constructor(private experienciaService: ExperienciaServiceService, private router: Router) { }
@@ -20,13 +21,14 @@ export class NewExperienciaComponent implements OnInit{
   }
 
   onCreate(): void{
-    const exp= new Experiencia(this.nombreE, this.aniosE, this.descripcionE);
+    const exp= new Experiencia(this.nombreE, this.aniosE1, this.aniosE2, this.descripcionE);
     this.experienciaService.save(exp).subscribe(data => {
       alert("Experiencia añadida con éxito.");
       this.router.navigate(['']);
     }, err =>{
+      console.log();
       alert("La creación de una nueva experiencia ha fallado.");
-      this.router.navigate(['']);
+      // this.router.navigate(['']);
     }
     )
   }
