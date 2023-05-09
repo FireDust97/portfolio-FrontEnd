@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AuthGuard } from './auth.guard';
 import { RouterModule, Routes } from '@angular/router';
 import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
@@ -11,11 +12,11 @@ import { LoginComponent } from './components/login/login.component';
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'login', component: LoginComponent},
-  {path:'nuevaexp', component: NewExperienciaComponent},
-  {path:'editexp/:id', component: EditExperienciaComponent},
-  {path:'nuevaedu', component: NeweducacionComponent},
-  {path:'editedu/:id', component: EditeducacionComponent},
-  {path:'editacercade/:id', component: EditAcercaDeComponent}
+  {path:'nuevaexp', component: NewExperienciaComponent, canActivate: [AuthGuard]},
+  {path:'editexp/:id', component: EditExperienciaComponent, canActivate: [AuthGuard]},
+  {path:'nuevaedu', component: NeweducacionComponent, canActivate: [AuthGuard]},
+  {path:'editedu/:id', component: EditeducacionComponent, canActivate: [AuthGuard]},
+  {path:'editacercade/:id', component: EditAcercaDeComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({
