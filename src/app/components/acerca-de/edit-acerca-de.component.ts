@@ -12,6 +12,14 @@ import { PersonaService } from 'src/app/service/persona.service';
 export class EditAcercaDeComponent {
   persona: persona = null;
 
+  isLoading: boolean = false;
+
+  simulateLogin(): void {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);}
+
   constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router: Router, public imageService: ImageService) { }
 
   ngOnInit(): void {
