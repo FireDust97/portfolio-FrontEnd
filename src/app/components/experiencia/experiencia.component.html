@@ -3,7 +3,8 @@
     <div class="col-lg-2">
         <button type="button" class="btn btn-warning" routerLink="/nuevaexp" *ngIf="isLogged">Agregar nueva experiencia</button>
     </div>
-    <div class="col-lg-1"></div>
+
+    <!-- <div class="col-lg-1"></div>
     <div class="col-lg-11">
         <table class="table">
             <tbody>
@@ -15,33 +16,22 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    
-    <!-- <div class="col-lg-1"></div>
-    <div class="col-lg-11 xpJobs">
-        <ul>
-            <li>
-                <h1>Trabajo x</h1>
-                <span>(años)</span>
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque cumque voluptates quidem. Rerum quidem nisi atque tempore, natus ipsum reprehenderit! Ipsum praesentium fugiat fuga facere id aspernatur, dolore consectetur ut?</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Trabajo x</h1>
-                <span>(años)</span>
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque cumque voluptates quidem. Rerum quidem nisi atque tempore, natus ipsum reprehenderit! Ipsum praesentium fugiat fuga facere id aspernatur, dolore consectetur ut?</p>
-        </ul>
-        <ul>
-            <li>
-                <h1>Trabajo x</h1>
-                <span>(años)</span>
-            </li>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque cumque voluptates quidem. Rerum quidem nisi atque tempore, natus ipsum reprehenderit! Ipsum praesentium fugiat fuga facere id aspernatur, dolore consectetur ut?</p>
-        </ul>
     </div> -->
-</div>
+    
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11 xpJobs">
+        <ul *ngFor="let Experiencia of exp">
+            <div *ngIf="isLogged"><button routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-square"></i></button></div>
+
+            <div *ngIf="isLogged"><button (click)="delete(Experiencia.id)"><i class="bi bi-trash-fill"></i></button></div>
+
+            <li>
+                <h1>{{Experiencia.nombreE}}</h1>
+                <p>{{Experiencia.aniosE}}</p>
+            </li>
+            <p>{{Experiencia.descripcionE}}</p>
+        </ul>
+    </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <hr>
 </div>
