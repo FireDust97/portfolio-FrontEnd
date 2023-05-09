@@ -25,6 +25,8 @@ export class ImageService {
       console.log("Firebase image URL generated succesfully:" + this.url);
       alert("¡Imagen procesada con éxito!")
     }})
-    .catch(error => console.log(error))
+    .catch(error =>{
+      alert("Error al procesar su imagen, inténtelo nuevamente o utilice otra imagen.");
+      console.log(error)})
   }
 }
