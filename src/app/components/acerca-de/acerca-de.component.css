@@ -3,6 +3,17 @@
     margin: 0px;
 }
 
+.scroll-effect{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 1s;
+}
+  
+.scroll-effect.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #photoSub{
     padding-bottom: 18px;
     font-family: 'Manrope';

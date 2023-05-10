@@ -15,6 +15,16 @@ export class AcercaDeComponent implements OnInit {
   isLogged = false;
 
   ngOnInit(): void {
+    window.addEventListener('scroll', () => {
+      const container = document.getElementById('pfpinit');
+      const containerPosition = container.getBoundingClientRect().top;
+    
+      if (containerPosition < window.innerHeight) {
+        container.classList.add('active');
+      }
+    });
+    
+
     this.cargarPersona();
     if(this.tokenService.getToken()){
       this.isLogged = true;
