@@ -13,22 +13,22 @@ export class ExperienciaServiceService {
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Experiencia[]>{
-    return this.httpClient.get<Experiencia[]>('http://localhost:8080/explab/lista');
+    return this.httpClient.get<Experiencia[]>('https://backend-portfolioargprog.onrender.com/explab/lista');
   }
 
   public detail(id: number): Observable<Experiencia>{
-    return this.httpClient.get<Experiencia>('http://localhost:8080/explab/' + `detail/${id}`)
+    return this.httpClient.get<Experiencia>('https://backend-portfolioargprog.onrender.com/explab/' + `detail/${id}`)
   }
 
   public save(experiencia: Experiencia): Observable<any>{
-    return this.httpClient.post<any>('http://localhost:8080/explab/create', experiencia);
+    return this.httpClient.post<any>('https://backend-portfolioargprog.onrender.com/explab/create', experiencia);
   }
 
   public update(id: number, experiencia: Experiencia): Observable<any>{
-    return this.httpClient.put<any>('http://localhost:8080/explab/' + `update/${id}`, experiencia);
+    return this.httpClient.put<any>('https://backend-portfolioargprog.onrender.com/explab/' + `update/${id}`, experiencia);
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>('http://localhost:8080/explab/' + `delete/${id}`);
+    return this.httpClient.delete<any>('https://backend-portfolioargprog.onrender.com/explab/' + `delete/${id}`);
   }
 }

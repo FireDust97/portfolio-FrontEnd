@@ -16,10 +16,10 @@ export class AuthService {
   constructor(private httpClient: HttpClient) { }
 
   public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
-    return this.httpClient.post<any>('http://localhost:8080/auth/nuevo', nuevoUsuario);
+    return this.httpClient.post<any>('https://backend-portfolioargprog.onrender.com/auth/nuevo', nuevoUsuario);
   }
 
   public login(loginUsuario: LoginUsuario): Observable<JwtDto>{
-    return this.httpClient.post<JwtDto>('http://localhost:8080/auth/login', loginUsuario);
+    return this.httpClient.post<JwtDto>('https://backend-portfolioargprog.onrender.com/auth/login', loginUsuario);
   }
 }

@@ -35,7 +35,6 @@ export class NeweducacionComponent implements OnInit{
       this.router.navigate(['']);
     }, err =>{
       alert("Ha habido un error al crear la educación propuesta. Por favor, intente nuevamente.");
-      // this.router.navigate(['']);
     })
   }
 }

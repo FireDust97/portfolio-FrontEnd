@@ -14,22 +14,22 @@ export class EducacionService {
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Educacion[]>{
-    return this.httpClient.get<Educacion[]>('http://localhost:8080/educacion/lista');
+    return this.httpClient.get<Educacion[]>('https://backend-portfolioargprog.onrender.com/educacion/lista');
   }
 
   public detail(id: number): Observable<Educacion>{
-    return this.httpClient.get<Educacion>('http://localhost:8080/educacion/' + `detail/${id}`);
+    return this.httpClient.get<Educacion>('https://backend-portfolioargprog.onrender.com/educacion/' + `detail/${id}`);
   }
 
   public save(educacion: Educacion): Observable<any>{
-    return this.httpClient.post<any>('http://localhost:8080/educacion/create', educacion);
+    return this.httpClient.post<any>('https://backend-portfolioargprog.onrender.com/educacion/', educacion);
   }
 
   public update(id: number, educacion: Educacion): Observable<any>{
-    return this.httpClient.put<any>('http://localhost:8080/educacion/' + `update/${id}`, educacion);
+    return this.httpClient.put<any>('https://backend-portfolioargprog.onrender.com/educacion/' + `update/${id}`, educacion);
   }
 
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>('http://localhost:8080/educacion/' + `delete/${id}`);
+    return this.httpClient.delete<any>('https://backend-portfolioargprog.onrender.com/educacion/' + `delete/${id}`);
   }
 }
