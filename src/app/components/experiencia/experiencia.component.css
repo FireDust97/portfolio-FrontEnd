@@ -14,22 +14,99 @@ div{
     padding-bottom: 8px;
 }
 
+.exp-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.exp-home button{
+    font-family: 'Nunito';
+	font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
 li{
     line-height: 0.7;
 }
 
-.xpJobs span{
+li p{
     padding-top: 10px;
     font-family: 'Manrope';
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
 }
 
-.xpJobs p{
+.expDesc p{
     padding-top: 11px;
     font-family: 'Manrope';
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
+}
+
+.expName{
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.explab-1{
+    border-right: 1px solid black;
+    padding-right: 13px;
+}
+
+.explab-1 p{
+    padding-left: 3px;
+}
+
+.control-btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 13px;
+}
+
+.control-btns i{
+    color: #E4E4E6;
+}
+
+.control-btns button{
+    border: none !important;
+    padding: 4px 7px;
+    border-radius: 18px;
+}
+
+.control-btns .edit-btn{
+    background-color: rgb(1, 194, 27);
+}
+
+.control-btns .delete-btn{
+    background-color: rgb(240, 22, 22);
+}
+
+ul{
+    list-style-type: "\1F67D";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li::marker{
+    text-align: center !important;
+}
+
+.exp-separator hr{
+    /* margin: 35px 0; */
+    display: block;
+    margin-top: 21px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 21px;
 }
 
 hr{

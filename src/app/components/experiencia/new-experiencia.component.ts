@@ -14,6 +14,14 @@ export class NewExperienciaComponent implements OnInit{
   aniosE2: string = '';
   descripcionE: string = '';
 
+  isLoading: boolean = false;
+
+  simulateLogin(): void {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);}
+
   constructor(private experienciaService: ExperienciaServiceService, private router: Router) { }
 
   ngOnInit(): void {

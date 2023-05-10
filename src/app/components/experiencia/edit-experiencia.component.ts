@@ -11,6 +11,14 @@ import { ExperienciaServiceService } from 'src/app/service/experiencia-service.s
 export class EditExperienciaComponent implements OnInit{
   expLab: Experiencia = null;
 
+  isLoading: boolean = false;
+
+  simulateLogin(): void {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);}
+
   constructor(private experienciaService: ExperienciaServiceService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
