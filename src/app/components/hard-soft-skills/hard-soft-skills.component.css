@@ -41,3 +41,10 @@ hr{
         flex-direction: column;
     }
 }
+
+@media (min-width: 673px) and (max-width: 806px){
+    .row{
+        padding: 0;
+        margin-top: 16px;
+    }
+}

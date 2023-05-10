@@ -40,7 +40,7 @@ li p{
 }
 
 .expDesc p{
-    padding-top: 11px;
+    padding: 29px;
     font-family: 'Manrope';
     font-weight: 400;
     font-size: 16px;
@@ -119,4 +119,20 @@ hr{
     border-width: 1px 0;
     margin: 0;
     padding: 0;
+}
+
+/* Media Queries */
+
+@media(max-width: 473px){
+    .exp-home{
+        flex-direction: column;
+    }
+
+    
+}
+
+@media(max-width: 991px){
+    .explab-1 p{
+        line-height: 1.3rem;
+    }
 }
