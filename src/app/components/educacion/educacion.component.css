@@ -4,7 +4,7 @@
 }
 
 div{
-    background-color: #E4E4E6;
+    background-color: rgb(191 191 191);
 }
 
 .row h1{
@@ -34,7 +34,7 @@ li{
 li p{
     padding-top: 10px;
     font-family: 'Manrope';
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     text-align: center;
 }
@@ -42,7 +42,7 @@ li p{
 .expDesc p{
     padding: 29px;
     font-family: 'Manrope';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     text-align: center;
 }

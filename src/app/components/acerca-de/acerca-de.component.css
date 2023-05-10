@@ -3,10 +3,6 @@
     margin: 0px;
 }
 
-div{
-    background-color: #E4E4E6;
-}
-
 #photoSub{
     padding-bottom: 18px;
     font-family: 'Manrope';
@@ -40,11 +36,13 @@ div{
 
 .acercaDe-start{
     padding: 3px 7px;
+    background-image: linear-gradient(to bottom, rgb(95 0 108), rgb(191 191 191));
 }
 
 .acercaDe{
     padding-top: 7px;
     padding-bottom: 3px;
+    background-color: rgb(191 191 191);
 }
 
 #aboutme{
@@ -62,7 +60,7 @@ div{
 
 #aboutme p{
     font-family: 'Manrope';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 2.0;
     text-align: center;
@@ -73,7 +71,8 @@ hr{
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+    border-color: #444444;
+    opacity: .50;
     border-style: solid none;
     border-width: 1px 0;
     margin: 0;
@@ -85,6 +84,7 @@ hr{
     display: flex;
     justify-content: center;
     padding-bottom: 26px;
+    background-color: rgb(191 191 191)
 }
 
 .acercaDe-edit button{

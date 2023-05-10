@@ -1,6 +1,6 @@
 .row{
     margin: 0;
-    background-color: #bab9be;
+    background-color: rgb(38 17 40);
 }
 
 div{
@@ -13,7 +13,7 @@ p{
     font-weight: 700;
     font-size: 16px;
     line-height: 0.3;
-    color: rgb(33, 36, 39);
+    color: antiquewhite;
 }
 
 a{

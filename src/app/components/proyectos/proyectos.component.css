@@ -1,7 +1,7 @@
 .row{
     margin: 0;
     padding: 20px 20px 0 20px;
-    background-color: #E4E4E6;
+    background-color: rgb(191 191 191);
 }
 
 .projectContainer{
@@ -17,7 +17,7 @@
 }
 
 .projectImgCtrl{
-    box-shadow: 10px 10px 1px #ab61b0;
+    box-shadow: 10px 10px 1px #d1f931;
 }
 
 .row h1, h2{
@@ -30,7 +30,7 @@
 .row p{
     padding-top: 11px;
     font-family: 'Manrope';
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
 }
 
