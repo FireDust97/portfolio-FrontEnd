@@ -1,10 +1,37 @@
 <div class="row">
-    <h1>Educación</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-warning" routerLink="/nuevaedu" *ngIf="isLogged">Agregar nueva educación</button>
+    <div class="edu-home">
+        <h1>Educación</h1>
+        <button type="button" class="btn btn-info" routerLink="/nuevaedu" *ngIf="isLogged">Agregar nueva educación</button>
     </div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
+    <div class="xpJobs" *ngFor="let Educacion of educacion">
+        <div class="exp-separator col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <hr>
+        </div>
+        <ul>
+            <div class="col-lg-2 explab-1">
+                <div class="control-btns">
+                    <div *ngIf="isLogged"><button class="edit-btn" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-square"></i></button></div>
+
+                    <div *ngIf="isLogged"><button class="delete-btn" (click)="delete(Educacion.id)"><i class="bi bi-trash-fill"></i></button></div>
+                </div>
+                <li>
+                    <h1 class="expName">{{Educacion.nombreE}}</h1>
+                    <p>{{Educacion.aniosE1}} - {{Educacion.aniosE2}}</p>
+                </li>
+            </div>
+            <div class="expDesc col-lg-7">
+                <p>{{Educacion.descripcionE}}</p>
+            </div>
+            
+        </ul>
+        <div class="exp-separator col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <hr>
+        </div>
+    </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <hr>
+</div>
+    <!-- <div class="col-lg-11">
         <table class="table">
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
@@ -19,7 +46,7 @@
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <hr>
-</div>
+</div> -->
 <!-- <div class="row">
     <h1>Mi educación</h1>
     <div class="col-lg-1"></div>

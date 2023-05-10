@@ -13,7 +13,7 @@
 
 .projectInfo, .projectImg{
     display: inline-block;
-    text-align: justify;
+    text-align: left;
 }
 
 .projectImgCtrl{

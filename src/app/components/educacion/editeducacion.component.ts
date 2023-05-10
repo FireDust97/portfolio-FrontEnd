@@ -11,6 +11,14 @@ import { EducacionService } from 'src/app/service/educacion.service';
 export class EditeducacionComponent implements OnInit{
   educacion: Educacion = null;
 
+  isLoading: boolean = false;
+
+  simulateLogin(): void {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000);}
+
   constructor(private educacionS: EducacionService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
