@@ -9,10 +9,10 @@ import { EducacionService } from 'src/app/service/educacion.service';
   styleUrls: ['./neweducacion.component.css']
 })
 export class NeweducacionComponent implements OnInit{
-  nombreE: string;
-  descripcionE: string;
-  aniosE1: string;
-  aniosE2: string;
+  nombreE: string = '';
+  descripcionE: string = '';
+  aniosE1: string = '';
+  aniosE2: string = '';
 
   isLoading: boolean = false;
 
