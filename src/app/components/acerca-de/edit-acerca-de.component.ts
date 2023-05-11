@@ -28,7 +28,6 @@ export class EditAcercaDeComponent {
       this.persona = data;
     }, err =>{
       alert("Error al modificar la información de perfil. Intente nuevamente.");
-      this.router.navigate(['']);
     })
   }
 
@@ -36,10 +35,10 @@ export class EditAcercaDeComponent {
     const id = this.activatedRouter.snapshot.params['id'];
     this.persona.img = this.imageService.url
     this.personaService.update(id, this.persona).subscribe(data =>{
+      alert("¡Perfil modificado con éxito!");
       this.router.navigate(['']);
     }, err =>{
       alert("Error al modificar la información de perfil. Intente nuevamente.");
-      this.router.navigate(['']);
     })
   }
 

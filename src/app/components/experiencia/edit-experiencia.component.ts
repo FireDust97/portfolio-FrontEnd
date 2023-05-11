@@ -27,13 +27,13 @@ export class EditExperienciaComponent implements OnInit{
       this.expLab = data;
     }, err =>{
       alert("Ha habido un error al modificar la experiencia. Intente nuevamente.");
-      this.router.navigate(['']);
     })
   }
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.experienciaService.update(id, this.expLab).subscribe(data => {
+      alert("¡Experiencia modificada con éxito!");
       this.router.navigate(['']);
     }, err =>{
       alert("Ha habido un error al modificar la experiencia. Intente nuevamente.");

@@ -31,7 +31,7 @@ export class NewExperienciaComponent implements OnInit{
   onCreate(): void{
     const exp= new Experiencia(this.nombreE, this.aniosE1, this.aniosE2, this.descripcionE);
     this.experienciaService.save(exp).subscribe(data => {
-      alert("Experiencia añadida con éxito.");
+      alert("¡Experiencia añadida con éxito!");
       this.router.navigate(['']);
     }, err =>{
       console.log();

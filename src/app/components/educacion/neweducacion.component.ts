@@ -31,9 +31,10 @@ export class NeweducacionComponent implements OnInit{
   onCreate(): void{
     const educacion = new Educacion(this.nombreE, this.descripcionE, this.aniosE1, this.aniosE2);
     this.educacionS.save(educacion).subscribe(data =>{
-      alert("Educación creada con éxito.");
+      alert("¡Educación creada con éxito!");
       this.router.navigate(['']);
     }, err =>{
+      console.log();
       alert("Ha habido un error al crear la educación propuesta. Por favor, intente nuevamente.");
     })
   }

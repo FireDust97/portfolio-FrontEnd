@@ -22,7 +22,7 @@ export class EducacionService {
   }
 
   public save(educacion: Educacion): Observable<any>{
-    return this.httpClient.post<any>('https://backend-portfolioargprog.onrender.com/educacion/', educacion);
+    return this.httpClient.post<any>('https://backend-portfolioargprog.onrender.com/educacion/create', educacion);
   }
 
   public update(id: number, educacion: Educacion): Observable<any>{

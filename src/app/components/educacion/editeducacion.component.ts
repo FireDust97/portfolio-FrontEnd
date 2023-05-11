@@ -26,7 +26,7 @@ export class EditeducacionComponent implements OnInit{
     this.educacionS.detail(id).subscribe(data =>{
       this.educacion = data;
     }, err =>{
-      alert("Error al modificar. Intente nuevamente.");
+      alert("Error al modificar la educación. Intente nuevamente.");
       this.router.navigate(['']);
     })
   }
@@ -34,6 +34,7 @@ export class EditeducacionComponent implements OnInit{
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.educacionS.update(id, this.educacion).subscribe(data =>{
+      alert("¡Educación modificada con éxito!");
       this.router.navigate(['']);
     }, err =>{
       alert("Error al modificar la educación. Intente nuevamente.");
