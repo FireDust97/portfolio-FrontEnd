@@ -4,7 +4,7 @@
 # Portfolio Web (Front-End) de Argentina Programa 4.0
 ![banner-ok-argentina-programa](https://github.com/FireDust97/portfolio-FrontEnd/assets/120528153/b5808fa8-a035-4113-a215-ee4412eb23ad)
 
-Con el fin de presentar el trabajo final integrador para el curso de Argentina Programa, este es el portfolio web que junta todo lo aprendido a lo largo de la cursada haciendo uso de diversas tecnologías para crear una web dinámica y limpia, tanto en funcionamiento como visualización.
+Con el fin de presentar el trabajo final integrador para el curso de Argentina Programa, este es el portfolio web que reúne todo lo aprendido a lo largo de la cursada haciendo uso de diversas tecnologías para crear una web dinámica y limpia, tanto en funcionamiento como visualización.
 
 ## ¿Qué tecnologías utiliza este proyecto?
 :large_orange_diamond: HTML5  
@@ -30,7 +30,7 @@ La página permite a sus visitantes visualizar la descripción, experiencia labo
 
 <h3>Como desarrollador:</h3>  
 
-La página cuenta con un botón de Login, que pedirá un usuario y contraseña para ingresar a las nuevas funcionalidades para enviar datos hacia la base de datos, entre las que se encuentran:  
+La página cuenta con un botón de Login, que pedirá un usuario y contraseña para ingresar a las nuevas funcionalidades para enviar nuevas entradas hacia la base de datos, entre las que se encuentran:  
 
 - Editar el nombre, apellido, descripción e imagen del desarrollador.  
 - Crear, editar y eliminar experiencias laborales.  
@@ -62,7 +62,7 @@ La página se encuentra funcionando bajo la tecnología de Google Firebase. El l
 
 - <h3>¿La página seguirá recibiendo actualizaciones de código o de experiencias y educaciones?</h3>  
 
-En cuanto a lo que programación se refiere, no es probable que se realicen más cambios, a salvedad de solucionar el error del método de TS mencionado arriba. Por otro lado, las experiencias y educaciones que se reciban con el paso del tiempo serán subidas a la página para que quede registro de ellas.  
+En cuanto a lo que programación se refiere, no es probable que se realicen más cambios, a salvedad de solucionar el error del método de TS mencionado arriba. Por otro lado, las experiencias y capacitaciones académicas que se reciban con el paso del tiempo serán subidas a la página para que quede registro de ellas.  
 
 ## Argentina Programa 4.0, 2023.  
 <h2>Readme.md modificado por última vez: 12 de mayo de 2023.</h2>
